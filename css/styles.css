@@ -75,7 +75,9 @@ img {
   
   }
  
-  
+  .nav {
+    background: linear-gradient(to right, black, white)
+  }
   .nav { grid-area: nav; 
 
     background-color: antiquewhite;
