@@ -34,11 +34,13 @@ h1 {
     margin: 10px;
     font-size: 40px;
     filter: blur(2px);
+    
 }
 
 h2 {
   font-size: 30px;
-  filter: blur(2px);
+  animation-delay: 5s;
+   filter: blur(2px);
 }
 
 img {
@@ -274,6 +276,7 @@ filter: opacity(100%);
   
   background-color: antiquewhite;
 }
+  
 
   .gridGaleriaShow {
   display: flex;
