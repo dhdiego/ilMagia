@@ -33,7 +33,14 @@ background-repeat: no-repeat;
 h1 {
     margin: 10px;
     font-size: 40px;
+    filter: blur(2px);
 }
+
+h2 {
+  font-size: 30px;
+  filter: blur(2px);
+}
+
 img {
   max-width: 100%;
   
@@ -76,7 +83,7 @@ img {
   }
  
   .nav {
-    background: linear-gradient(to right, black, white)
+    background: linear-gradient(to right, black,  grey, white)
   }
   .nav { grid-area: nav; 
 
@@ -104,7 +111,7 @@ img {
 }
 
   .main { grid-area: main;
-  
+    
   }
   
 /* footer */
@@ -137,6 +144,28 @@ display: inline;
 display: flex;
 justify-content: center;
 
+
+
+
+
+}
+
+.fotoPortada img {
+  transition: all 5s;
+  filter: contrast(175%) brightness(3%);
+  transition: all 5s;
+filter: contrast(175%) brightness(3%);
+  
+  
+  
+  }
+
+.fotoPortada img:hover {
+
+  filter: drop-shadow(16px 16px 20px red);
+
+    cursor: pointer;
+    
 }
   
  .redesSociales img {
@@ -177,14 +206,22 @@ justify-content: center;
 }
 
 .gridBio {
- display: grid;
-  grid-template-columns: 20% 60%;
-
+display: flex;
+ /*  grid-template-columns: 20% 60%; */
+transition: all 2s;
 
   
 
 }
  
+.gridBio Img:hover{
+  cursor: pointer;
+  -webkit-transform:scale(1.3);
+  transform:scale(1.3);
+  filter: sepia(50%)
+
+}
+
 .gridBio p {
   display: flex;
   justify-content: center;
@@ -198,20 +235,90 @@ justify-content: center;
 }
 
 .gridGaleria {
+
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
 padding: 5px;
+filter: opacity(100%);
+
+
 
 
 }
+
+.gridGaleria .grid_item img{
+  transition: all 3s;
+}
+
+
+
 .gridGaleria img {
  width: 100%;
  margin: 5px;
+
+ 
+
 }
+
+
+.gridGaleria img:hover {
+  
+  cursor: pointer;
+  
+  height: 500px;
+  padding: 10px;
+  filter: none;
+  filter: opacity(0%);
+  transform: rotate(15deg);
+  
+  background-color: antiquewhite;
+}
+
+  .gridGaleriaShow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+
+
+
+   
+  }
+  .gridGaleriaShow img{ 
+    transition: all 3s;
+   /*  filter: hue-rotate(90deg); */
+  }
+.gridGaleriaShow .grid_itemShow img:hover {
+
+    transition: all 3s;
+/*     filter: hue-rotate(90deg); */
+border-radius:50%;
+-webkit-border-radius:50%;
+box-shadow: 0px 0px 15px 15px #EA0606 ;
+-webkit-box-shadow: 0px 0px 15px 15px #FF0909;
+transform: rotate(360deg);
+-webkit-transform: rotate(360deg);
+    cursor: pointer;
+    height: 490px;
+    
+    
+ 
+  }
+ 
+  
+    
+    
+  
+/*   filter: blur(5px); */
+
+
+
+
 
 .grid_item {
 margin: 5px;
+
 
 
 
