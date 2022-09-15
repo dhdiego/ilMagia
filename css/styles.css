@@ -88,8 +88,12 @@ footer {
   height: 100px;
   margin-top: 0px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   
+}
+
+footer .textoFooter p{
+display: inline;
 }
 
 .anchoFooter {
@@ -138,9 +142,14 @@ footer {
 }
 
 
-@media (max-width: 768px) { 
-  .mt-mobile{
-    margin-top: 3rem;
-  } 
+@media (max-width: 500px) {
+
+  .redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
 }
+
