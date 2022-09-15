@@ -15,9 +15,7 @@
        
   
 } */
-html {
-  
-}
+
 body {
 
 background-color: white;
@@ -43,6 +41,17 @@ h2 {
   font-size: 30px;
 }
 
+.nav-link {
+  font-size: 25px;
+
+}
+.nav-link:hover {
+  background-color: red;
+  border-radius: 5px;
+  font-size: 25px;
+
+}
+
 #carouselExampleIndicators {
   margin: 10px;
 }
@@ -62,7 +71,7 @@ text-align: center;
   padding: 1rem 2rem;
   font-size: 1.5rem; 
  margin-bottom: 30px;
-
+margin: 10px;
 }
 
 .botonContacto a {
@@ -72,6 +81,7 @@ text-align: center;
   border-radius: 0.5rem;
   text-decoration: none;
   margin-top: 30px;
+ 
  
 }
 
@@ -106,7 +116,7 @@ display: inline;
 }
 
 .bi-facebook {
-  font-size: 30px;
+  font-size: 45px;
   text-align: center;
   margin-left: 5px;
   margin-right: 5px;
@@ -118,7 +128,7 @@ display: inline;
 }
 
 .bi-whatsapp {
-  font-size: 30px;
+  font-size: 45px;
   text-align: center;
   margin-left: 5px;
   margin-right: 5px;
@@ -130,7 +140,7 @@ display: inline;
 }
 
 .bi-instagram {
-  font-size: 30px;
+  font-size: 45px;
   text-align: center;
   margin-left: 5px;
   margin-right: 5px;
@@ -139,6 +149,22 @@ display: inline;
 
 .bi-instagram:hover {
   color: red;
+}
+
+.bi-youtube {
+  font-size: 45px;
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: black;
+}
+
+.bi-youtube:hover {
+  color: red;
+}
+.textoFooter  {
+  display: flex;
+  
 }
 
 
